@@ -1,7 +1,5 @@
-@Library('jenkins-shared-library') _
-
-standardBackendPipeline(
-    appName: 'property-management-service',
-    registry: 'yassinekamouss',
-     sonarProjectKey: 'property-microservice'
+@Library('my-shared-library') _
+springBootPipeline(
+    appName: 'property-management-service', 
+    dockerUser: 'junaiduthman'
 )
