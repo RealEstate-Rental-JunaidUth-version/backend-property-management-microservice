@@ -1,13 +1,18 @@
 server:
   port: 8084
 
+  
+
 spring:
   profiles:
-    active: prod
+    active: dev
   application:
     name: property-microservice  # correspond au nom du fichier dans le repo config
   config:
     import: "optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}"
+  cloud:
+    config:
+      failFast: true
 
 
 
